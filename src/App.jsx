@@ -8,6 +8,8 @@ import HomePage from "./Components/HomePage";
 import Cart from "./Pages/Cart";
 import OrderConfirmation from "./Pages/OrderConfirmation";
 import Checkout from "./Pages/Checkout";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 
 const router = createBrowserRouter(
   [
@@ -38,6 +40,14 @@ const router = createBrowserRouter(
         {
           path: "orderConfirmation",
           element: <OrderConfirmation />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
+        {
+          path: "contact",
+          element: <Contact/>,
         },
       ],
     },
