@@ -8,6 +8,8 @@ const ProductDetails = () => {
 
     const [product, setProduct] = useState([]);
 
+    const { addToCart }  = useCart();
+
     useEffect(() => {
           setProduct( products.find((p)=>p.id.toString() === id));
           
@@ -75,7 +77,7 @@ const ProductDetails = () => {
 
           {/* Buttons */}
           <div className="flex gap-4 mt-10">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition">
+            <button onClick={()=>addToCart(product)} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition">
               Add to Cart
             </button>
 

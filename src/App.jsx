@@ -4,8 +4,10 @@ import { createBrowserRouter,RouterProvider} from 'react-router'
 import Navbar from './Components/Navbar'
 import Productlist from './Pages/Productlist'
 import ProductDetails from './Pages/ProductDetails'
-import Checkout from './Pages/Checkout'
 import HomePage from './Components/HomePage'
+import Cart  from './Pages/Cart'
+import OrderConfirmation from './Pages/OrderConfirmation'
+import Checkout from './Pages/Checkout';
 
 
 const router = createBrowserRouter([
@@ -16,8 +18,9 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path:"productlist",element:<Productlist /> },
       { path:"productDetails/:id", element:<ProductDetails/>},
-      { path:"cart",element:<cart/>},
-      { path:"checkout",element:<Checkout/>}
+      { path:"cart",element:<Cart/>},
+      { path:"Checkout",element:<Checkout/>},
+      {path:"orderConfirmation",element:<OrderConfirmation/>}
       
     ]
 

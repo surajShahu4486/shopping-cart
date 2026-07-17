@@ -3,7 +3,7 @@ import React from "react";
 import { useCart } from "../context/CartContext";
 
 
-const CategoryFilter = () => {
+const CategoryFilter = ({selectedCategory, setSelectedCategory}) => {
 
   const initialProducts = useCart();
 
@@ -12,7 +12,6 @@ const CategoryFilter = () => {
     ...new Set(initialProducts.products.map((p) => p.category)),
   ];
 
-  const selectedCategory = "Phone";
   return (
     <div className="flex flex-wrap gap-3 justify-center p-4">
       {availableCategories.map((category) => (
