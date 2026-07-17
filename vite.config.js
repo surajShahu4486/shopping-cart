@@ -10,5 +10,5 @@ export default defineConfig({
      tailwindcss(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  base: "/shopping-cart/",
+  base: '/shopping-cart/',
 })

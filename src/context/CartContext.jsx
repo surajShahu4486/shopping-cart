@@ -33,7 +33,7 @@ export const CartProvider = ({ children }) => {
 
     // ADD item Into The Cart
     const addToCart = (product) => {
-        toast.success('🦄 Wow so easy!', {
+        toast.success('🦄 Item added to Cart', {
             position: "top-center",
             autoClose: 5000,
             hideProgressBar: false,
